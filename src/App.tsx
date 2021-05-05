@@ -1,8 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
 
-function App() {
+import keycloak from 'lib/keycloak'
+
+function App(): JSX.Element {
+  const logout = (): void => {
+    keycloak.logout()
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -10,17 +15,12 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a className="App-link" href="#" onClick={logout} rel="noopener noreferrer">
+          Logout
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,10 @@
+{
+  "realm": "realm",
+  "auth-server-url": "https://sso-example.com/auth/",
+  "ssl-required": "external",
+  "resource": "42323",
+  "credentials": {
+    "secret": "dfgdsgdfg-33c1-23rds-b00d-dsgdsfgdasf"
+  },
+  "confidential-port": 0
+}

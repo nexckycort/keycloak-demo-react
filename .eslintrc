@@ -1,0 +1,10 @@
+{
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [],
+  "rules": {
+    "@typescript-eslint/space-before-function-paren": "off"
+  }
+}
